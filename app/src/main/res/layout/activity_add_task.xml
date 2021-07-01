@@ -9,7 +9,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Criar Tarefa"
+        app:title="@string/label_new_task"
         app:navigationIcon="@drawable/ic_navigate" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -32,7 +32,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Título"
+        android:hint="@string/label_title"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end" >
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:hint="Data"
+        android:hint="@string/label_date"
         app:layout_constraintTop_toBottomOf="@id/til_title"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toStartOf="@id/til_hour"
@@ -69,7 +69,7 @@
             android:id="@+id/til_hour"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
-            android:hint="Hora"
+            android:hint="@string/label_hour"
             app:startIconDrawable="@drawable/ic_timer"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@id/til_date"
@@ -89,7 +89,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:layout_constraintBottom_toTopOf="@id/btn_new_task"
         android:layout_height="wrap_content"
-        android:text="Cancelar"
+        android:text="@string/label_cancel"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         style="@style/Widget.MaterialComponents.Button"
-        android:text="Criar Tarefa"
+        android:text="@string/label_new_task"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
