@@ -3,6 +3,7 @@ package br.com.fabianafarias.todolist.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import br.com.fabianafarias.todolist.databinding.ActivityMainBinding
 import br.com.fabianafarias.todolist.datasource.TaskDataSource
 
@@ -22,6 +23,14 @@ class MainActivity : AppCompatActivity() {
     private fun insertListeners() {
         binding.fab.setOnClickListener {
             startActivityForResult(Intent(this, AddTaskActivity::class.java), CREATE_NEW_TASK)
+        }
+
+        adapter.listenerEdit = {
+            Log.e("TAG", "listenerEdit: $it")
+        }
+
+        adapter.listenerDelete = {
+            Log.e("TAG", "listenerDelete: $it")
         }
     }
 
